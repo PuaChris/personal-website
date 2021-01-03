@@ -21,7 +21,7 @@ function App() {
         </p>
         
         <Link activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
-          <Button inverted color="red" size="huge">
+          <Button inverted color="red" size="large">
           Who am I?
           </Button>
         </Link>
@@ -39,10 +39,10 @@ function App() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce erat leo, elementum ut nibh quis. 
             </p>
             <div className="About-Buttons">
-              <Button inverted color="blue" size="huge">
+              <Button inverted color="blue" size="large">
                 Resume
               </Button>
-              <Button inverted color="blue" size="huge">
+              <Button inverted color="blue" size="large">
                 Projects
               </Button>  
             </div>
@@ -52,8 +52,8 @@ function App() {
         <div className="About-Skills-Section">
           <img src={skills} className="About-Skills"/>
         </div>
-        <Link activeClass="active" to="Contact" spy={true} smooth={true} duration={2500}>
-          <Button inverted color="blue" size="huge">
+        <Link activeClass="active" to="Contact" spy={true} smooth={true} duration={500}>
+          <Button inverted color="blue" size="large">
             Contact Information
           </Button>  
         </Link>
@@ -62,7 +62,7 @@ function App() {
 
       <div id="Contact">
         <div className="Contact-Description">
-          <p>
+          <p className="Contact-Motto">
             Let's talk.
           </p>
           <p className="Contact-Email">
