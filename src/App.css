@@ -1,4 +1,4 @@
-.Home {
+#Home {
   text-align: center;
   background-color: #0A244A;
   min-height: 100vh;
@@ -10,18 +10,26 @@
 }
 
 .Name {
-  font-size: calc(10px + 8vmin);
+  font-size: calc(10px + 4vmin);
+  margin: 2%;
 }
 
-.Description {
-  margin: 20;
-  font-size: calc(5px + 3vmin);
-}
-
-.ui.inverted.red.button:focus {
+#Home .ui.inverted.teal.button {
   background-color: transparent;
-  box-shadow: 0 0 0 2px #ff695e inset !important;
-  color: #ff695e;
+  box-shadow: 0 0 0 2px white inset !important;
+  color: white;
+}
+
+#Home .ui.inverted.teal.button:hover {
+  background-color: white;
+  box-shadow: 0 0 0 2px white inset !important;
+  color: #0A244A;
+}
+
+#Home .ui.inverted.teal.button:focus {
+  background-color: transparent;
+  box-shadow: 0 0 0 2px white inset !important;
+  color: white;
 }
 
 #About {
@@ -50,25 +58,45 @@
 
 .About-Title {
   margin: 20px;
-  font-size: calc(10px + 5vmin);
+  font-size: calc(10px + 4vmin);
 }
 
 .About-Description {
   margin: 20px;
   max-width: 500px;
-  font-size: calc(5px + 2vmin);
+  font-size: calc(5px + 1.5vmin);
 }
 
 .About-Buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around; 
+  justify-content: space-evenly; 
 }
 
-.ui.inverted.blue.button:focus {
+#About .ui.inverted.blue.button {
+  background-color: #0A244A;
+  box-shadow: 0 0 0 2px #0A244A inset !important;
+  color:white;
+}
+
+#About .ui.inverted.blue.button:hover {
   background-color: transparent;
   box-shadow: 0 0 0 2px #0A244A inset !important;
+  color: #0A244A;
+}
+
+#About .ui.inverted.blue.button:focus {
+  background-color: #0A244A;
+  box-shadow: 0 0 0 2px #0A244A inset !important;
+  color: white;
+}
+
+#About a {
+  color: white;
+}
+
+#About a:hover {
   color: #0A244A;
 }
 
@@ -95,7 +123,7 @@
   margin: 0;
   width: calc(350px + 20vmin);
   text-align: center;
-  font-size: calc(8px + 2vmin);
+  font-size: calc(7px + 2.5vmin);
 }
 
 .Contact-Motto {
@@ -114,10 +142,10 @@
   justify-content: space-evenly;
 }
 
-a {
+#Contact a {
   color: #ff695e;
 }
 
-a:hover {
+#Contact a:hover {
   color: white;
 }

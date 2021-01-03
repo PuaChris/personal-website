@@ -12,16 +12,11 @@ import skills from './Skills.png';
 function App() {
   return (
     <main>
-      <div className="Home">
-        <h1 className="Name">
-          Chris Pua
-        </h1>
-        <p className="Description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce erat leo, elementum ut nibh quis. 
-        </p>
+      <div id="Home">
+        <h1 className="Name"> Hi! My name is <span style={{color: "#ff695e"}}>Chris Pua</span>. </h1>
         
         <Link activeClass="active" to="About" spy={true} smooth={true} duration={1000}>
-          <Button inverted color="red" size="large">
+          <Button inverted color="teal" size="massive">
           Who am I?
           </Button>
         </Link>
@@ -36,14 +31,18 @@ function App() {
               About Me
             </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce erat leo, elementum ut nibh quis. 
+              I'm a 4th year computer engineering student from the University of Toronto with fullstack experience. Check out my past projects and resume below!
             </p>
             <div className="About-Buttons">
-              <Button inverted color="blue" size="large">
-                Resume
+              <Button inverted color="blue" size="huge">
+                <a href="https://drive.google.com/file/d/18weuSBkoiuo8hhr6cC7UhzIzlVGTs7h0/view?usp=sharing">
+                  Resume
+                </a>
               </Button>
-              <Button inverted color="blue" size="large">
-                Projects
+              <Button inverted color="blue" size="huge">
+                <a href="https://github.com/PuaChris">
+                  Projects
+                </a>
               </Button>  
             </div>
           </div>
@@ -52,8 +51,8 @@ function App() {
         <div className="About-Skills-Section">
           <img src={skills} className="About-Skills"/>
         </div>
-        <Link activeClass="active" to="Contact" spy={true} smooth={true} duration={500}>
-          <Button inverted color="blue" size="large">
+        <Link activeClass="active" to="Contact" spy={true} smooth={true} duration={1000}>
+          <Button inverted color="blue" size="massive">
             Contact Information
           </Button>  
         </Link>
