@@ -35,7 +35,7 @@ function App() {
             </p>
             <div className="About-Buttons">
               <Button inverted color="blue" size="huge">
-                <a href="https://drive.google.com/file/d/1ClbuQJpfGmSFDI21YOz4Gugx4g7sOXNy/view?usp=sharing">
+                <a href="https://drive.google.com/file/d/1pUJDXnCMEFEVNiI-Ka5MlFp7GJJix4PS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   Resume
                 </a>
               </Button>
